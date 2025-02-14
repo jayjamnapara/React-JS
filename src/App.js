@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
-import About from './About';
+import { Home } from './component/Home';
+import { About } from './component/About';
+import { ChnageName } from './component/ChnageName';
 // import ContactUs from './ContactUs';
 
 function App() {
@@ -9,8 +10,10 @@ function App() {
   let x = "hello"
   return (
     <div className="App">
-      <Home data={x}></Home>
-      <About></About>
+      {/* <Home data={x}></Home>
+      <About></About> */}
+
+      <ChnageName></ChnageName>
     </div>
   );
 }
