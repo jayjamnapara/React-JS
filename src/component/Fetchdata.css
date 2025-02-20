@@ -1,60 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Fetchdata.css */
+
+.main-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    /* color: #333; */
 }
-.body{
-    height: 100vh;
-    width: 98%;
-    margin: 0% auto;
-    display: grid;
-    gap: 10px;
-    padding: 5%;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
 }
-.data{
-    height: auto;
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.data {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.data:hover {
+    transform: scale(1.05);
+}
+
+.img {
     width: 100%;
-    padding: 5%;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #000;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
 }
-.img{
-    height: 250px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.main-title{
-    color: rgb(177, 177, 255);
-    text-align: center;
-    margin-top: 2%;
-    font-weight: 500;
-    font-family: 'Josefin Sans', sans-serif;
-}
-.title{
-    margin: 3%;
-    font-family: 'Josefin Sans', sans-serif;
-}
-.editbtn{
-    height: 35px;
-    width: 110px;
-    background-color: rgb(82, 99, 211);
-    border: none;
-    color: white;
+
+.title {
     font-size: 1rem;
-    border-radius: 10px;
-    margin: 3%;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
 }
-.dltbtn{
-    height: 35px;
-    width: 110px;
-    background-color: rgb(231, 87, 87);
+
+.editbtn, .dltbtn {
+    padding: 8px 12px;
+    margin: 5px;
     border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editbtn {
+    background-color: #4CAF50;
     color: white;
-    font-size: 1rem;
-    border-radius: 10px;
-    margin: 3%;
+}
+
+.editbtn:hover {
+    background-color: #45a049;
+}
+
+.dltbtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.dltbtn:hover {
+    background-color: #d32f2f;
 }

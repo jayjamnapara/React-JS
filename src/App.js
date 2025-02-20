@@ -5,6 +5,8 @@ import { About } from './component/About';
 import { ChnageName } from './component/ChnageName';
 import Chnagecolor from './component/Chnagecolor';
 import Fetchdata from './component/Fetchdata';
+import Change from './component/Change';
+import Chnagebg from './component/Chnagebg';
 // import ContactUs from './ContactUs';
 
 function App() {
@@ -19,7 +21,11 @@ function App() {
 
       {/* <Chnagecolor></Chnagecolor> */}
 
-      <Fetchdata></Fetchdata>
+      {/* <Fetchdata></Fetchdata> */}
+
+      {/* <Change></Change> */}
+
+      <Chnagebg></Chnagebg>
     </div>
   );
 }
