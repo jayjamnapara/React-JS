@@ -7,6 +7,7 @@ import Chnagecolor from './component/Chnagecolor';
 import Fetchdata from './component/Fetchdata';
 import Change from './component/Change';
 import Chnagebg from './component/Chnagebg';
+import Form from './component/Form';
 // import ContactUs from './ContactUs';
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
 
       {/* <Change></Change> */}
 
-      <Chnagebg></Chnagebg>
+      {/* <Chnagebg></Chnagebg> */}
+
+      <Form></Form>      
     </div>
   );
 }
